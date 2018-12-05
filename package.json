@@ -1,0 +1,26 @@
+{
+  "name": "stockly-challenge",
+  "version": "0.1.0",
+  "description": "Generate 100K signature",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test",
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StocklyRecruitment/CodeProject-YanaelBarbier.git"
+  },
+  "author": "Yanael Barbier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StocklyRecruitment/CodeProject-YanaelBarbier/issues"
+  },
+  "homepage": "https://github.com/StocklyRecruitment/CodeProject-YanaelBarbier#readme",
+  "devDependencies": {
+    "eslint": "^5.9.0"
+  }
+}
