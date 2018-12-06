@@ -3,6 +3,12 @@ const csv = require('csvtojson');
 // Abstract the retrive of users
 // Provide functinos to get an array of users
 
+// ToDo functions:
+// - readFromJSON
+// - readFromDB
+// - generateUser
+// - readFromFileStream: Read from a file with a stream
+
 class UsersList {
 
   constructor(sourceType, sourcePath) {
@@ -10,11 +16,6 @@ class UsersList {
     this.sourcePath = sourcePath || null;
     this.users = [];
   }
-
-  // ToDo:
-  // - readFromJSON
-  // - readFromDB
-  // - generateUser
 
   async readFromCsv(filename) {
     const json = await csv({

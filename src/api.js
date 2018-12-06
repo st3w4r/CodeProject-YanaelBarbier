@@ -2,13 +2,17 @@ const axios = require('axios');
 
 // Provide functions to interact with the Change API
 
+// ToDo functions:
+// - batchSignPetition: Send a batch of signatues
+// - streamSign: Send each sign through a stream
+
 class ChangeApi {
-  constructor() {
+  constructor(changeToken, changeCookie) {
     this.host = 'https://www.change.org';
     this.headers = {
       'content-type': 'application/json',
-      'x-csrf-token': process.env.CHANGE_TOKEN || null,
-      'cookie': process.env.CHANGE_COOKIE || null,
+      'x-csrf-token': changeToken || null,
+      'cookie': changeCookie || null,
     };
   }
 
@@ -27,8 +31,13 @@ class ChangeApi {
       headers: this.headers,
     };
 
-    const response = await axios(options);
-    return response;
+    try {
+      const response = await axios(options);
+      return response;
+    } catch (e) {
+      console.error(`Error to sign the petition: ${e}`);
+      return null;
+    }
   }
 }
 
