@@ -1,6 +1,6 @@
-const assert = require('assert')
+const { assert } = require('chai');
 
-const ChangeApi = require('../src/api')
+const ChangeApi = require('../src/api');
 
 describe('ChangeApi', () => {
 
@@ -10,10 +10,9 @@ describe('ChangeApi', () => {
       const changeApi = new ChangeApi();
 
       assert.equal(changeApi.host, 'https://www.change.org');
-    })
+    });
 
     it('should sign a petition', async () => {
-
       const changeApi = new ChangeApi();
 
       const petitionId = 13954429;
@@ -21,13 +20,12 @@ describe('ChangeApi', () => {
       const lastName = 'Bar';
       const email = 'yana@bar.com';
 
-
       try {
-      const res = await changeApi.signPetition(petitionId, firstName, lastName, email);
+        const res = await changeApi.signPetition(petitionId, firstName, lastName, email);
         console.log(res);
       } catch (e) {
         console.error(e);
       }
-    })
-  })
-})
+    });
+  });
+});

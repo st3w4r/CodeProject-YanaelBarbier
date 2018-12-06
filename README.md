@@ -12,7 +12,8 @@ Generate 100K signature on the change.org
 - Create a module to fire an API call
 - Generate a list of users (given name, last name, email)
 - Read CSV or DB
-- Deplay the api calls, to don't be blocked by change.org
+- Delay the api calls, to don't be blocked by change.org
+- Pool of queries
 - Linter, Flow
 - Tests with mocha
 - Docker configuration
@@ -21,7 +22,7 @@ Generate 100K signature on the change.org
 
 - api
 - file_reader
-- delayer 
+- delayer
 
 
 

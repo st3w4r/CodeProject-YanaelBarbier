@@ -1,5 +1,7 @@
 const axios = require('axios');
 
+// Provide functions to interact with the Change API
+
 class ChangeApi {
   constructor() {
     this.host = 'https://www.change.org';
