@@ -46,6 +46,7 @@ The list of users is stored into `./data/users.csv` each rows will be sent to th
 - [] Post request from a stream
 - [] Batch post requests
 - [] Set a delay between each requests
+- [] Docker configuration for dev environment
 
 ## API change.org
 
