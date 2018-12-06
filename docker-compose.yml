@@ -1,0 +1,18 @@
+version: "3"
+services:
+
+  stockly:
+    container_name: stockly-challenge
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - PETITION_ID=<REPLACE WITH A CHANGE PETITION ID>
+      - CHANGE_TOKEN=<REPLACE WITH CHANGE TOKEN>
+      - CHANGE_COOKIE=<REPLACE WITH CHANGE COOKIE>
+    stdin_open: true
+    tty: true
+
+networks:
+  stockly:
+    driver: bridge

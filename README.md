@@ -5,6 +5,22 @@ Generate 100K signatures on the change.org petition
 
 [Chnage.org](https://www.change.org/p/yana%C3%ABl-barbier-hire-yana%C3%ABl-barbier?recruiter=917966904&utm_source=share_petition&utm_medium=copylink&utm_campaign=share_petition)
 
+## Launch
+
+First set the env variable into `docker-compose.yml` or on your env variables
+
+To launch the project you can use docker with this command:
+
+`docker-compose up`
+
+Or without docker, NodeJs is required on the host
+
+```
+npm install
+npm start
+```
+
+The list of users is stored into `./data/users.csv` each rows will be sent to the Change.org Api
 
 ## Process
 
