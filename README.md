@@ -21,10 +21,15 @@ Generate 100K signature on the change.org
 ## Architecture
 
 - api
-- file_reader
+- users
 - delayer
 
+## ToDo
 
+[] Read file as a stream
+[] Post request from a stream
+[] Batch post requests
+[] Set a delay between each requests
 
 ## API change.org
 

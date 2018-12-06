@@ -11,11 +11,9 @@ const changeApi = new ChangeApi(
 const usersList = new UsersList('csv', './data/users.csv');
 
 const start = async () => {
-
   const users = await usersList.getUsers();
 
   users.forEach(async (user) => {
-
     const response = await changeApi.signPetition(PETITION_ID,
       user.first_name,
       user.last_name,
@@ -26,4 +24,4 @@ const start = async () => {
   });
 };
 
-start();
+module.exports = start;

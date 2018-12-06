@@ -7,8 +7,9 @@
     "test": "test"
   },
   "scripts": {
+    "start": "node index",
     "test": "./node_modules/mocha/bin/mocha test",
-    "dev": "node index.js"
+    "dev": "node index"
   },
   "repository": {
     "type": "git",
