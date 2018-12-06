@@ -1,6 +1,6 @@
 # Stockly
 
-Generate 100K signature on the change.org
+Generate 100K signatures on the change.org petition
 
 
 [Chnage.org](https://www.change.org/p/yana%C3%ABl-barbier-hire-yana%C3%ABl-barbier?recruiter=917966904&utm_source=share_petition&utm_medium=copylink&utm_campaign=share_petition)
@@ -26,10 +26,10 @@ Generate 100K signature on the change.org
 
 ## ToDo
 
-[] Read file as a stream
-[] Post request from a stream
-[] Batch post requests
-[] Set a delay between each requests
+- [] Read file as a stream
+- [] Post request from a stream
+- [] Batch post requests
+- [] Set a delay between each requests
 
 ## API change.org
 
