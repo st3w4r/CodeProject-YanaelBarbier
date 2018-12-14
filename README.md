@@ -24,6 +24,8 @@ The list of users is stored into `./data/users.csv` each rows will be sent to th
 
 ## Process
 
+### Proposal v0
+
 - Reverse the change.org API
 - Create a module to fire an API call
 - Generate a list of users (given name, last name, email)
@@ -33,6 +35,15 @@ The list of users is stored into `./data/users.csv` each rows will be sent to th
 - Linter, Flow
 - Tests with mocha
 - Docker configuration
+
+### Proposal v1
+
+- Nightmare JS
+- Use a framework that simulate a browser
+- Fill the form
+- Submit the form
+- Get the confirmation email
+- Click to pass the verification check
 
 ## Architecture
 
@@ -97,3 +108,19 @@ Response
 ```
 
 The boolean sucess should be true is the email is verified
+
+
+## Nightmare
+
+Link to confirm email address:
+
+https://www.change.org/p/13954429/signatures/confirm?token=xxxxxxxxxx&utm_source=petition_signer_confirmation
+
+How to handle all the emails
+- Use the alias emails features
+- Mailparser
+- IMAP client
+- To do the verification only a `curl -L` works as well
+
+How to change location and ip address:
+- Use a proxy
