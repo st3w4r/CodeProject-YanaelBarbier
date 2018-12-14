@@ -7,6 +7,24 @@ Generate 100K signatures on the change.org petition
 
 ## Launch
 
+To launch the signing process.
+
+Create a list into `data/users.csv`
+
+And a directory `screenshots` to store image when nightmare process is exectued.
+
+Build the image
+```
+sh buil.sh
+```
+
+Launch the process
+```
+sh run.sh
+```
+
+Dev mode
+
 First set the env variable into `docker-compose.yml` or on your env variables
 
 To launch the project you can use docker with this command:
